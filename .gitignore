@@ -1,0 +1,11 @@
+front-end-forensic/node_modules
+spring-boot-forenseq/node_modules
+.bash_logout
+.sudo_as_admin_successful
+.bashrc
+.profile
+.vim
+.ssh
+.viminfo
+.cache
+.bash_history
