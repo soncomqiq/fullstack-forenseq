@@ -10,8 +10,8 @@ cat all_db_bak.sql | sudo docker-compose exec -T db /usr/bin/mysql -uroot -p1234
 
 # Port
 
-frontend: localhost:3000
+frontend: http://localhost:3000
 
-backend: localhost:8080
+backend: http://localhost:8080
 
-mysql-server: localhost:3306
+mysql-server: http://localhost:3306
