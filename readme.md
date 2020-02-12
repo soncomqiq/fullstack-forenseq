@@ -1,20 +1,20 @@
 # FGxBIO v2
 
-### How to start server
+## How to start server
 
 ```
 sudo docker-compose up -d --build
 ```
 
-### How to import database
+## How to import database
 
-> go to sqlserver-forenseq (cd sqlserver-forenseq)
+go to __sqlserver-forenseq__ (cd __sqlserver-forenseq__)
 
 ```
 cat all_db_bak.sql | sudo docker-compose exec -T db /usr/bin/mysql -uroot -p12345678 fgxbio
 ```
 
-### Port
+## Port
 
 Server | URL and Port
 ------------ | -------------
