@@ -8,7 +8,7 @@ services:
   app-server:
     # Configuration for building the docker image for the backend service
     build:
-      context: spring-boot-forenseq # Use an image built from the specified dockerfile in the `polling-app-server` directory.
+      context: spring-boot-forenseq # Use an image built from the specified dockerfile in the `Forenseq-app-server` directory.
       dockerfile: Dockerfile
     ports:
       - "3002:8080" # Forward the exposed port 8080 on the container to port 8080 on the host machine
@@ -26,7 +26,7 @@ services:
   # Frontend Service 
   app-client:
     build:
-      context: front-end-forensic # Use an image built from the specified dockerfile in the `polling-app-client` directory.
+      context: front-end-forensic # Use an image built from the specified dockerfile in the `Forenseq-app-client` directory.
       dockerfile: Dockerfile
       args:
         REACT_APP_API_BASE_URL: http://127.0.0.1:8080/api
